@@ -1,0 +1,158 @@
+html, body, header, h1, h2, h3, nav, ul, li, a, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #eee;
+  color: #333;
+}
+
+a {
+  color: #f00;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  background: #f7f7f8;
+  border-bottom: 3px solid #eaeaeb;
+}
+
+.header-wrap {
+  width: 900px;
+  margin: auto;
+  border-left: 3px solid #eaeaeb;
+  border-right: 3px solid #eaeaeb;
+}
+
+.header a {
+  color: #000;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-logo > a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.header-logo > a:hover {
+  background: #f0f1f2;
+}
+
+.header-nav {
+  float: right;
+}
+
+.header-nav > ul {
+}
+
+.header-nav > ul > li {
+  position: relative;
+  float: left;
+  border-left: 3px solid #eaeaeb;
+}
+
+.header-nav > ul > li > a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.header-nav > ul > li:hover > a {
+  background: #f0f1f2;
+}
+
+.page {
+  background: white;
+  width: 860px;
+  padding: 20px;
+  margin: auto;
+  border-left: 3px solid #ddd;
+  border-right: 3px solid #ddd;
+}
+
+.page > h1 {
+  font-size: 24px;
+}
+
+.project {
+  margin: 10px 5px;
+}
+
+.project > h2 {
+  font-size: 20px;
+  display: inline;
+}
+
+.project > h3 {
+  display: inline;
+  font-size: 18px;
+  margin: 3px 0;
+  padding: 0 3px;
+  border-left: 1px solid #ccc;
+}
+
+.project > h2 > a, .project > h3 > a {
+  color: #000;
+}
+
+/* --- Footer --- */
+
+.footer {
+  width: 860px;
+  padding: 20px;
+  margin: auto;
+  background: #ddd;
+  color: #999;
+  border: 3px solid #ccc;
+}
+
+.footer a {
+  color: #999;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  float: left;
+}
+
+.footer-links {
+  float: right;
+}
+
+.footer-links > ul > li {
+  float: left;
+  padding: 0 0 0 20px;
+}
+
+.hide {
+  display: none;
+}

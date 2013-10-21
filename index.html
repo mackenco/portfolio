@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./portfolio.css"></link>
+    <meta charset="utf-8">
+    <title>Colin MacKenzie</title>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="pages.js"></script>
+
+  </head>
+
+  <body>
+    <header class="header">
+        <div class="header-wrap group">
+
+          <h1 class="header-logo">
+            <a href="#">Colin MacKenzie.</a>
+          </h1>
+
+          <nav class="header-nav">
+            <ul class="group nav">
+              <li class="projects"><a href="#">Projects</a></li>
+              <li class="about"><a href="#">About</a></li>
+              <li class="contact"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </header>
+
+      <section class="page group">
+
+        <div class="projects">
+          <h1>Projects</h1>
+          <ul class="projects">
+            <li class="project">
+              <h2><a href="http://www.belly-guide.com">BellyGuide</a></h2>
+              <h3>
+                <a href="https://github.com/mackenco/BellyGuides">Source</a>
+              </h3>
+              <p>BellyGuide is a Rails and Backbone.js-based website that helps people keep track of restaurants they want to try, by organizing them in to-do lists. Features include integration with the Mapbox API, user login, and comment posting through AJAX requests. </p>
+            </li>
+
+            <li class="project">
+              <h2>
+                <a href="http://mackenco.github.io/asteroids/">Asteroids</a></h2>
+              <h3>
+                <a href="https://github.com/mackenco/asteroids">Source</a>
+              </h3>
+              <p>A browser-based asteroids clone using Javascript.</p>
+            </li>
+
+            <li class="project">
+              <h2><a href="http://mackenco.github.io/snake">Snake</a></h2>
+              <h3>
+                <a href="https://github.com/mackenco/snake/tree/master">Source</a>
+              </h3>
+              <p>A browser-based snake clone using Javascript.</p>
+            </li>
+
+            <li class="project">
+              <h2>Journal App</h2>
+              <h3>
+                <a href="https://github.com/mackenco/JournalApp">Source</a>
+              </h3>
+              <p>A Backbone.js-based journaling app.</p>
+            </li>
+
+            <li class="project">
+              <h2>To-Do App</h2>
+              <h3>
+                <a href="https://github.com/mackenco/todo_app">Source</a>
+              </h3>
+              <p>A Rails-based to-do app.</p>
+            </li>
+
+            <li class="project">
+              <h2>Phototagger</h2>
+              <h3>
+                <a href="https://github.com/mackenco/phototagger">Source</a>
+              </h3>
+              <p>Mimicking Facebook’s phototagging ability. Built using Javascript, in the style of Backbone.js.</p>
+            </li>
+          </ul>
+        </section>
+        </div>
+
+        <div class="">
+
+      <footer class="footer group">
+        <small class="footer-copy">
+          Colin MacKenzie.
+        </small>
+
+        <nav class="footer-links">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+  </body>
+</html>
+
+<script type="application/javascript">
+  $(document).ready(function () {
+    $(".nav").children().on("click", function(event) {
+      var cl = '.'+$(event.currentTarget).attr('class')
+      $('.page').children().addClass('hide')
+      $('.page').children(cl).removeClass('hide')
+    })
+  })
+</script>
