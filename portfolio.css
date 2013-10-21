@@ -124,8 +124,13 @@ h2 {
   color: #74907C;
 }
 
-.project > h2 > a:hover, .project > h3 > a:hover {
-  font-style: italic;
+.project > h2 > a:hover {
+  color: #74907C;
+  font-weight: bold;
+}
+
+.project > h3 > a:hover {
+  font-weight: bold;
 }
 
 .project > p {
