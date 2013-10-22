@@ -97,6 +97,10 @@ h2 {
   font-size: 24px;
 }
 
+.sidebar {
+  float: left;
+}
+
 .project {
   margin: 10px 5px;
 }
@@ -147,40 +151,41 @@ h2 {
   border: 14px solid #ccc;
 }
 
-.bio {
+div.about {
   float: right;
   width: 620px;
+  padding-bottom: 20px;
 }
 
-.bio > h1{
+.about > h1{
   font-size: 30px;
   padding-bottom: 10px;
-  text-align: center;
 }
-.bio > p {
+.about > p {
   float: left;
   margin: 0;
-  padding: 0;
 }
 
-.links > li > a > span{
-  color: #74907C
+div.contact {
+  width: 620px;
+  float: right;
+}
+
+.contact > h2 {
+}
+
+.icons {
+  margin: auto;
+}
+
+.links > li {
+  margin: 5px;
+  padding: 5px;
+  float: left;
 }
 
 .links > li > a {
   color: #333;
-}
-
-.links > h2 {
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-}
-
-.links > li {
-  margin-left: 5px;
-  padding-left: 5px;
-  border-left: 1px solid #ccc;
 }
 
 /* --- Footer --- */
