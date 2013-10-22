@@ -66,9 +66,6 @@ h2 {
   float: right;
 }
 
-.header-nav > ul {
-}
-
 .header-nav > ul > li {
   position: relative;
   float: left;
@@ -93,56 +90,8 @@ h2 {
   border-right: 3px solid #ddd;
 }
 
-.page > h1 {
-  font-size: 24px;
-}
-
 .sidebar {
   float: left;
-}
-
-.project {
-  margin: 10px 5px;
-}
-
-.project > h2 {
-  font-size: 20px;
-  display: inline;
-}
-
-.project > h3 {
-  display: inline;
-  font-size: 18px;
-  margin: 3px 0;
-  padding: 0 3px;
-  border-left: 1px solid #ccc;
-}
-
-.project > h2 > a {
-  color: #333;
-}
-
-.project > h3 > a {
-  color: #74907C;
-}
-
-.project > h2 > a:hover {
-  color: #74907C;
-  font-weight: bold;
-}
-
-.project > h3 > a:hover {
-  font-weight: bold;
-}
-
-.project > p {
-  border-left: 1px solid #ccc;
-  padding-left: 5px;
-}
-
-.page > div > h1 {
-  font-size: 24px;
-  padding-bottom: 10px;
 }
 
 .img {
@@ -157,9 +106,14 @@ div.about {
   padding-bottom: 20px;
 }
 
-.about > h1{
+.content > div > h1 {
   font-size: 30px;
   padding-bottom: 10px;
+}
+
+.content > div {
+  width: 620px;
+  float: right;
 }
 .about > p {
   float: left;
@@ -169,9 +123,6 @@ div.about {
 div.contact {
   width: 620px;
   float: right;
-}
-
-.contact > h2 {
 }
 
 .icons {
@@ -187,6 +138,25 @@ div.contact {
 .links > li > a {
   color: #333;
 }
+
+.container {
+  width: 100%;
+  overflow-x: scroll;
+
+}
+.project-icons {
+  width: 500px;
+  margin: auto;
+}
+
+.project-icons >  li {
+  display:block;
+  float: left;
+  padding:5px 10px;
+  width: 150px;
+  height: 50px;
+}
+
 
 /* --- Footer --- */
 
