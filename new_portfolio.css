@@ -1,0 +1,87 @@
+html, body, header, h1, h2, h3, nav, ul, li, a, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+  background: #ecf0f1;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body, button, input, select, textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/*  sidebar/header thing  */
+
+#header {
+  position: relative;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px;
+  background: #2980b9;
+  color: #ecf0f1;
+  float: left;
+}
+
+#header > img {
+  display: block;
+  border: 4px solid #ecf0f1;
+  width: 100px;
+  height: auto;
+}
+
+#header > h1 {
+  font-size: 30px;
+  width: 80px;
+  line-height: 1.25;
+  padding-bottom: 10px;
+}
+
+.icons {
+  margin: auto;
+}
+
+.links > li {
+  margin: 5px;
+  padding: 5px;
+  float: left;
+}
+
+.links > li > a {
+  color: #ecf0f1;
+}
+
+#content {
+  padding: 40px 20px 40px 40px;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  float: left;
+  color: #34495e;
+}

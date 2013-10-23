@@ -80,7 +80,7 @@ i, .icon {
 }
 
 .hoverable:hover{
-  color: #2980b9;
+  color: #34495e;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
 }
