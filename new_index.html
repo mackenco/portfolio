@@ -33,12 +33,28 @@
         <div class="icons">
           <ul class="links">
             <li>
-              <a href="mailto:colinwmackenzie@gmail.com" target="_blank">
+              <script type="text/javascript">
+              //<![CDATA[
+              <!--
+              var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+              "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+              ".substr(0,ol);}f(\")001,\\\"100\\\\t\\\\300\\\\630\\\\420\\\\310\\\\620\\\\" +
+              "oY_QCLr610\\\\w720\\\\]M@TDP300\\\\000\\\\}Mp}3pr{t771\\\\Ws|n}wzsnczbbffk=" +
+              "iqhjcl\\\"\\\\\\\"\\\\@230\\\\630\\\\010\\\\120\\\\X620\\\\JW\\\\\\\\530\\\\"+
+              "630\\\\420\\\\400\\\\600\\\\430\\\\230\\\\B730\\\\400\\\\410\\\\500\\\\220\\"+
+              "\\500\\\\n\\\\000\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf." +
+              "gnirtS=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcn" +
+              "uf\")"                                                                       ;
+              while(x=eval(x));
+              //-->
+              //]]>
+              </script>
+
                 <i class="icon-paperplane icon2x hoverable"></i>
               </a>
             </li>
             <li>
-              <a href="mailto:colinwmackenzie@gmail.com" target="_blank">
+              <a href="https://docs.google.com/file/d/0B9kJvHTjKuCnQy1Id1B0LUwwbU0/edit?usp=sharing" target="_blank">
                 <i class="icon-information_white icon2x hoverable"></i>
               </a>
             </li>
@@ -104,7 +120,7 @@
               <img src="snake.png" id="snake_pic">
             </div>
             <div class="paragraph">
-              <p>A browser-based Snake clone using Javascript.</p>
+              <p>A recreation of the classic game Snake. Browser-based and built using JavaScript and CSS. Snake's length increases as apples are eaten, snake dies when colliding with the wall or it's own tail.</p>
             </div>
           </li>
 
@@ -118,7 +134,12 @@
               <img src="phototagger.png" id="phototagger_pic">
             </div>
             <div class="paragraph">
-              <p>A phototagging application mimicking Facebook's tag functionality built using Javascript and Ruby on Rails.</p>
+              <p>An app mimicking Facebook's phototagging function. Built in the MVCish style of Backbone.js without any Backbone. Features:</p>
+              <ul>
+                  <li>Users upload urls to photos.</li>
+                  <li>Photos have detail, index, and edit views.</li>
+                  <li>To tag, jQuery is used to determine the location of the click, a red box is drawn around the area, and a list of taggable users is rendered.</li>
+              </ul>
             </div>
           </li>
 
@@ -132,13 +153,16 @@
               <img src="chess.png" id="chess_pic">
             </div>
             <div class="paragraph">
-              <p>Command-line, two-player chess game built in Ruby.</p>
+              <p>A command-line, two-player chess game built in Ruby. Features:</p>
+              <ul>
+                <li>Standard chess gameplay, including alerting for check and checkmate, castling, and pawn promotion.</li>
+                <li>Prevents movement of a piece if it would lead to check.</li>
+                <li>Allows users to save or load a previous game state using YAML serialization.</li>
+                <li>Utilizes module inheritance to reduce code (e.g. bishop and queen inherit from the same movement logic).</li>
+                </ul>
             </div>
           </li>
-
         </ul>
-
-
 
       </main>
     </div>
