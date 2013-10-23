@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="./new_portfolio.css"></link>
+    <link rel="stylesheet" href="./new_portfolio.css">
     <link rel="stylesheet" href="./mfglabs_iconset.css">
     <meta charset="utf-8">
     <title>Colin MacKenzie</title>
@@ -13,24 +13,28 @@
 
     <div id="wrap" class="group">
       <header id="header">
+
         <h1>Colin MacKenzie</h1>
-        <img src="colin-mackenzie.jpg">
+        <div id="pic">
+          <img src="colin-mackenzie.jpg">
+        </div>
+
         <p>I am a web developer located in New York with a passion for thoughtful, intuitive design and clean code. I'm looking to keep learning and be a part of challenging, stimulating projects. I'm quick on the uptake and have an eye for the bigger picture. I have competitive skills in Ruby on Rails, JavaScript, SQL, HTML, and CSS.</p>
 
         <div class="icons">
           <ul class="links">
             <li>
-              <a href="mailto:colinwmackenzie@gmail.com">
+              <a href="mailto:colinwmackenzie@gmail.com" target="_blank">
                 <i class="icon-message icon3x hoverable"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/mackenco">
+              <a href="https://github.com/mackenco" target="_blank">
                 <i class="icon-octopus icon3x hoverable"></i>
               </a>
             </li>
             <li>
-              <a href="http://www.linkedin.com/in/colinwmackenzie">
+              <a href="http://www.linkedin.com/in/colinwmackenzie"                              target="_blank">
                 <i class="icon-linked_in icon3x hoverable"></i>
               </a>
             </li>
@@ -39,7 +43,24 @@
       </header>
 
       <main id="content">
-        Hello
+
+        <ul class="projects">
+          <li class="project">
+            <h2><a href="http://www.belly-guide.com">BellyGuide</a></h2>
+            <h3>
+              <a href="https://github.com/mackenco/BellyGuides">Source</a>
+            </h3>
+            <div class="screenshot">
+              <img src="bellyguide.png" id="bellyguide">
+            </div>
+            <div class="paragraph">
+              <p>BellyGuide is a Rails and Backbone.js-based website that helps people keep track of restaurants they want to try, by organizing them in to-do lists. Features include integration with the Mapbox API, user login, and comment posting through AJAX requests. </p>
+            </div>
+          </li>
+        </ul>
+
+
+
       </main>
     </div>
 
