@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <title>Colin MacKenzie</title>
     <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
 
   </head>
 
 
   <body>
     <nav>
+      <ul>
+        <li><a href="#bellyguide" class="scroll">BellyGuide</a></li>
+        <li><a href="#asteroids" class="scroll">Asteroids</a></li>
+        <li><a href="#snake" class="scroll">Snake</a></li>
+        <li><a href="#phototagger" class="scroll">Phototagger</li>
+        <li><a href="#chess" class="scroll">Chess</a></li>
+      </ul>
     </nav>
     <div id="wrap" class="group">
       <header id="header">
@@ -51,7 +59,7 @@
       <main id="content">
 
         <ul class="projects">
-          <li class="project">
+          <li class="project" id="bellyguide">
             <h2><a href="http://www.belly-guide.com" target="_blank">
                 BellyGuide</a>
             </h2>
@@ -60,14 +68,14 @@
                 Source</a>
             </h3>
             <div class="screenshot">
-              <img src="bellyguide.png" id="bellyguide">
+              <img src="bellyguide.png" id="bellyguide_pic">
             </div>
             <div class="paragraph">
               <p>BellyGuide is a Rails and Backbone.js-based website that helps people keep track of restaurants they want to try, by organizing them in to-do lists. Features include integration with the Mapbox API, user login, and comment posting through AJAX requests. </p>
             </div>
           </li>
 
-          <li class="project">
+          <li class="project" id="asteroids">
             <h2>
               <a href="http://mackenco.github.io/Asteroids/" target="_blank">
                 Asteroids</a>
@@ -77,14 +85,14 @@
                 Source</a>
             </h3>
             <div class="screenshot">
-              <img src="asteroid.png" id="asteroids">
+              <img src="asteroid.png" id="asteroids_pic">
             </div>
             <div class="paragraph">
               <p>A browser-based Asteroids clone using Javascript.</p>
             <div class="paragraph">
           </li>
 
-          <li class="project">
+          <li class="project" id="snake">
             <h2><a href="http://mackenco.github.io/Snake" target="_blank">
               Snake</a>
             </h2>
@@ -93,35 +101,35 @@
                 Source</a>
             </h3>
             <div class="screenshot">
-              <img src="snake.png" id="snake">
+              <img src="snake.png" id="snake_pic">
             </div>
             <div class="paragraph">
               <p>A browser-based Snake clone using Javascript.</p>
             </div>
           </li>
 
-          <li class="project">
+          <li class="project" id="phototagger">
             <h2>Phototagger</h2>
             <h3>
               <a href="https://github.com/mackenco/Phototagger" target="_blank">
                 Source</a>
             </h3>
             <div class="screenshot">
-              <img src="phototagger.png" id="phototagger">
+              <img src="phototagger.png" id="phototagger_pic">
             </div>
             <div class="paragraph">
               <p>A phototagging application mimicking Facebook's tag functionality built using Javascript and Ruby on Rails.</p>
             </div>
           </li>
 
-          <li class="project">
+          <li class="project" id="chess">
             <h2>Chess</h2>
             <h3>
               <a href="https://github.com/mackenco/Chess" target="_blank">
                 Source</a>
             </h3>
             <div class="screenshot">
-              <img src="chess.png" id="chess">
+              <img src="chess.png" id="chess_pic">
             </div>
             <div class="paragraph">
               <p>Command-line, two-player chess game built in Ruby.</p>

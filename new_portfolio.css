@@ -20,7 +20,6 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #34495e;
-
 }
 a:hover {
   text-decoration: none;
@@ -46,6 +45,23 @@ nav {
   height: 50px;
   background: #3498db;
   position: fixed;
+}
+
+nav > ul {
+  float: right;
+}
+
+nav > ul > li {
+  float: left;
+  padding: 10px 45px;
+}
+
+nav > ul > li > a {
+  color: #2c3e50;
+}
+
+nav > ul > li > a:hover {
+  color: #ecf0f1;
 }
 
 /*  sidebar/header thing  */
@@ -146,27 +162,27 @@ nav {
   display: block;
 }
 
-#bellyguide {
+#bellyguide_pic {
   width: 105%;
   margin: -5px -15px;
 }
 
-#asteroids {
+#asteroids_pic {
   width: 250%;
   margin: -260px -475px;
 }
 
-#snake {
+#snake_pic {
   width: 350%;
   margin: -370px -700px;
 }
 
-#chess {
+#chess_pic {
   width: 310%;
   margin: 0 -90px;
 }
 
-#phototagger {
+#phototagger_pic {
   width: 200%;
   margin: -230px -120px;
 }
