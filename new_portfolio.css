@@ -142,26 +142,31 @@ nav {
   box-shadow: 0 0 5px 2px #575659;
 }
 
-#bellyguide {
+.screenshot > img {
   display: block;
+}
+
+#bellyguide {
   width: 105%;
   margin: -5px -15px;
 }
 
 #asteroids {
-  display: block;
   width: 250%;
   margin: -260px -475px;
 }
 
 #snake {
-  display: block;
   width: 350%;
   margin: -370px -700px;
 }
 
 #chess {
-  display: block;
   width: 310%;
   margin: 0 -90px;
+}
+
+#phototagger {
+  width: 200%;
+  margin: -230px -120px;
 }
