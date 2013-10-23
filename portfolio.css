@@ -7,22 +7,23 @@ html, body, header, h1, h2, h3, nav, ul, li, a, footer, small {
   vertical-align: baseline;
 }
 
-body {
-  font-family: Georgia, serif;
-  background: #eee;
-  color: #333;
-}
-
-a {
-  text-decoration: none;
+html, body {
+  height: 100%;
+  background: #ecf0f1;
 }
 
 ul {
   list-style: none;
 }
 
-h2 {
-  font-size: 30px;
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #34495e;
+}
+a:hover {
+  text-decoration: none;
+  color: #2980b9;
 }
 
 .group:after {
@@ -31,102 +32,76 @@ h2 {
   clear: both;
 }
 
-.header {
-  background: #f7f7f8;
-  border-bottom: 3px solid #eaeaeb;
+body, button, input, select, textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
-.header-wrap {
-  width: 900px;
-  margin: auto;
-  border-left: 3px solid #eaeaeb;
-  border-right: 3px solid #eaeaeb;
+/* links */
+nav {
+  width: 100%;
+  height: 50px;
+  background: #3498db;
+  position: fixed;
 }
 
-.header a {
-  color: #000;
-}
-
-.header-logo {
-  float: left;
-}
-
-.header-logo {
-  display: block;
-  padding: 10px 20px;
-  color: #000;
-  font-weight: bold;
-}
-
-.header-logo > a:hover {
-  background: #f0f1f2;
-}
-
-.header-nav {
+nav > ul {
   float: right;
 }
 
-.header-nav > ul > li {
+nav > ul > li {
+  float: left;
+  padding: 10px 45px;
+}
+
+nav > ul > li > a {
+  color: #ecf0f1;
+}
+
+nav > ul > li > a:hover {
+  color: #2c3e50;
+}
+
+/*  sidebar/header thing  */
+
+#header {
   position: relative;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px;
+  background: #2980b9;
+  color: #ecf0f1;
   float: left;
-  border-left: 3px solid #eaeaeb;
+  position: fixed;
 }
 
-.header-nav > ul > li > a {
+#pic {
+  overflow: hidden;
+  border: 4px solid #ecf0f1;
+  height: 100px;
+  width: 100px;
+}
+
+#pic > img {
   display: block;
-  padding: 10px 20px;
+  width: 100px;
+  margin: -18px 0;
 }
 
-.header-nav > ul > li:hover > a {
-  background: #f0f1f2;
-}
-
-.page {
-  background: white;
-  width: 860px;
-  padding: 20px;
-  margin: auto;
-  border-left: 3px solid #ddd;
-  border-right: 3px solid #ddd;
-}
-
-.sidebar {
-  float: left;
-}
-
-.img {
-  float: left;
-  display: inline-block;
-  border: 14px solid #ccc;
-}
-
-div.about {
-  float: right;
-  width: 620px;
-  padding-bottom: 20px;
-}
-
-.content > div > h1 {
+#header > h1 {
   font-size: 30px;
+  width: 80px;
+  line-height: 1.25;
   padding-bottom: 10px;
 }
 
-.content > div {
-  width: 620px;
-  float: right;
-}
-.about > p {
-  float: left;
-  margin: 0;
-}
-
-div.contact {
-  width: 620px;
-  float: right;
-}
-
 .icons {
-  margin: auto;
 }
 
 .links > li {
@@ -136,60 +111,88 @@ div.contact {
 }
 
 .links > li > a {
-  color: #333;
+  color: #ecf0f1;
 }
 
-.container {
+/* body */
+
+#content {
+  padding: 60px 20px 40px 350px;
+  max-width: 700px;
   width: 100%;
-  overflow-x: scroll;
-
+  height: 100%;
+  float: left;
+  color: #34495e;
 }
-.project-icons {
-  width: 500px;
+.project {
+  border-bottom: 1px solid #34495e;
+}
+.project > h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.project > h3 {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.paragraph {
+  margin: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.paragraph > p {
   margin: auto;
+  width: 600px;
+  padding-bottom: 10px;
 }
 
-.project-icons >  li {
-  display:block;
-  float: left;
-  padding:5px 10px;
-  width: 150px;
-  height: 50px;
+.paragraph > ul {
+  list-style-type: circle;
 }
 
-
-/* --- Footer --- */
-
-.footer {
-  width: 860px;
-  padding: 20px;
+.paragraph > ul > li {
   margin: auto;
-  background: #ddd;
-  color: #999;
-  border: 3px solid #ccc;
+  width: 550px;
+  font-size: 16px;
 }
 
-.footer a {
-  color: #999;
+.screenshot {
+  overflow: hidden;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  box-shadow: 0 0 5px 2px #575659;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.screenshot > img {
+  display: block;
 }
 
-.footer-copy {
-  float: left;
+#bellyguide_pic {
+  width: 105%;
+  margin: -5px -15px;
 }
 
-.footer-links {
-  float: right;
+#asteroids_pic {
+  width: 250%;
+  margin: -260px -475px;
 }
 
-.footer-links > ul > li {
-  float: left;
-  padding: 0 0 0 20px;
+#snake_pic {
+  width: 350%;
+  margin: -370px -700px;
 }
 
-.hide {
-  display: none;
+#chess_pic {
+  width: 310%;
+  margin: 0 -90px;
+}
+
+#phototagger_pic {
+  width: 200%;
+  margin: -230px -120px;
 }

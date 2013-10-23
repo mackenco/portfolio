@@ -1,89 +1,184 @@
 <html>
   <head>
-    <link rel="stylesheet" href="./portfolio.css"></link>
+    <link rel="stylesheet" href="./new_portfolio.css">
     <link rel="stylesheet" href="./mfglabs_iconset.css">
     <meta charset="utf-8">
     <title>Colin MacKenzie</title>
     <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
 
   </head>
 
+
   <body>
-    <header class="header">
-        <div class="header-wrap group">
+    <nav>
+      <ul>
+        <li><a href="#bellyguide" class="scroll">BellyGuide</a></li>
+        <li><a href="#asteroids" class="scroll">Asteroids</a></li>
+        <li><a href="#snake" class="scroll">Snake</a></li>
+        <li><a href="#phototagger" class="scroll">Phototagger</li>
+        <li><a href="#chess" class="scroll">Chess</a></li>
+      </ul>
+    </nav>
+    <div id="wrap" class="group">
+      <header id="header">
 
-          <h1 class="header-logo">Colin MacKenzie.</h1>
-
-          <nav class="header-nav">
-            <ul class="group nav">
-              <li class="about"><a href="#">About</a></li>
-              <li class="contact"><a href="#">Contact</a></li>
-              <li class="projects"><a href="#">Projects</a></li>
-            </ul>
-          </nav>
-
-        </div>
-    </header>
-
-    <section class="page group">
-      <div class="sidebar">
-        <img src="colin-mackenzie.jpg" width="200" height="300" alt="Colin Mackenzie">
-      </div>
-
-      <div class="content">
-        <div class="about group">
-          <h1>Colin MacKenzie</h1>
-          <p>I am a web developer located in New York with a passion for thoughtful, intuitive design and clean code. I'm looking to keep learning and be a part of challenging, stimulating projects. I'm a quick on the uptake and have an eye for the bigger picture. I have competitive skills in Ruby on Rails, JavaScript, SQL, HTML, and CSS.</p>
-        </div>
-        <div class="contact group">
-          <h1>Contact Me</h1>
-          <div class="icons">
-            <ul class="links">
-              <li>
-                <a href="mailto:colinwmackenzie@gmail.com">
-                  <i class="icon-message icon3x hoverable"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/mackenco">
-                  <i class="icon-octopus icon3x hoverable"></i>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.linkedin.com/in/colinwmackenzie">
-                  <i class="icon-linked_in icon3x hoverable"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <h1>Colin MacKenzie</h1>
+        <div id="pic">
+          <img src="colin-mackenzie.jpg">
         </div>
 
-        <div class="projects">
-          <h1>Projects</h1>
-          <div class="container group">
-            <ul class="project-icons">
-              <li>BellyGuide</li>
-              <li>Asteroids</li>
-              <li>Snake</li>
-              <li>Journal App</li>
-              <li>To-Do App</li>
-              <li>Phototagger</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+        <p>I am a web developer located in New York with a passion for thoughtful, intuitive design and clean code. I'm looking to keep learning and be a part of challenging, stimulating projects. I'm quick on the uptake and have an eye for the bigger picture. I have competitive skills in Ruby on Rails, JavaScript, SQL, HTML, and CSS.</p>
 
-      <footer class="footer group">
-        <small class="footer-copy">
-          Colin MacKenzie.
-        </small>
-        <nav class="footer-links">
-          <ul>
-            <li></li>
+        <div class="icons">
+          <ul class="links">
+            <li>
+              <script type="text/javascript">
+              //<![CDATA[
+              <!--
+              var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+              "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+              ".substr(0,ol);}f(\")001,\\\"100\\\\t\\\\300\\\\630\\\\420\\\\310\\\\620\\\\" +
+              "oY_QCLr610\\\\w720\\\\]M@TDP300\\\\000\\\\}Mp}3pr{t771\\\\Ws|n}wzsnczbbffk=" +
+              "iqhjcl\\\"\\\\\\\"\\\\@230\\\\630\\\\010\\\\120\\\\X620\\\\JW\\\\\\\\530\\\\"+
+              "630\\\\420\\\\400\\\\600\\\\430\\\\230\\\\B730\\\\400\\\\410\\\\500\\\\220\\"+
+              "\\500\\\\n\\\\000\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf." +
+              "gnirtS=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcn" +
+              "uf\")"                                                                       ;
+              while(x=eval(x));
+              //-->
+              //]]>
+              </script>
+
+                <i class="icon-paperplane icon2x hoverable"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/file/d/0B9kJvHTjKuCnQy1Id1B0LUwwbU0/edit?usp=sharing" target="_blank">
+                <i class="icon-information_white icon2x hoverable"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/mackenco" target="_blank">
+                <i class="icon-octopus icon2x hoverable"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/colinwmackenzie"                              target="_blank">
+                <i class="icon-linked_in_circle icon2x hoverable"></i>
+              </a>
+            </li>
           </ul>
-        </nav>
-      </footer>
-  </body>
-</html>
+        </div>
+      </header>
 
+      <main id="content">
+
+        <ul class="projects">
+          <li class="project" id="bellyguide">
+            <h2><a href="http://www.belly-guide.com" target="_blank">
+                BellyGuide</a>
+            </h2>
+            <h3>
+              <a href="https://github.com/mackenco/BellyGuides" target="_blank">
+                Source</a>
+            </h3>
+            <div class="screenshot">
+              <img src="bellyguide.png" id="bellyguide_pic">
+            </div>
+            <div class="paragraph">
+              <p>BellyGuide is a Rails and Backbone.js-based website that helps people keep track of restaurants they want to try by organizing them in to-do lists. Features:</p>
+              <ul>
+                <li>Create custom maps to keep track of restaurants, using the Mapbox API and Leaflet JavaScript library.</li>
+                <li>UJS used to add and delete comments on screen immediately.</li>
+                <li>Custom-made user authentication with password encryption and session token storage.</li>
+                <li>Includes Rspec tests for all  Rails models and Capybara tests for user interaction.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project" id="asteroids">
+            <h2>
+              <a href="http://mackenco.github.io/Asteroids/" target="_blank">
+                Asteroids</a>
+            </h2>
+            <h3>
+              <a href="https://github.com/mackenco/Asteroids" target="_blank">
+                Source</a>
+            </h3>
+            <div class="screenshot">
+              <img src="asteroid.png" id="asteroids_pic">
+            </div>
+            <div class="paragraph">
+              <p>The classic arcade game Asteroids built for play in the browser using JavaScript, HTML5, and Canvas.</p>
+              <ul>
+                <li>Uses inheritance to build a MovingObject class which informs movement of the ship, asteroids, and bullets.</li>
+                <li>Uses vector algebra to calculate movement of objects on the canvas.</li>
+                <li>Checks for collisions of objects and removes them from the canvas if so. Checks when objects are out of bounds and updates them accordingly.</li>
+                <li>Has a custom background using a .jpg of space.</li>
+              </ul>
+            <div class="paragraph">
+          </li>
+
+          <li class="project" id="snake">
+            <h2><a href="http://mackenco.github.io/Snake" target="_blank">
+              Snake</a>
+            </h2>
+            <h3>
+              <a href="https://github.com/mackenco/Snake/tree/master"                          target="_blank">
+                Source</a>
+            </h3>
+            <div class="screenshot">
+              <img src="snake.png" id="snake_pic">
+            </div>
+            <div class="paragraph">
+              <p>A recreation of the classic game Snake. Browser-based and built using JavaScript and CSS. Snake's length increases as apples are eaten, snake dies when colliding with the wall or it's own tail.</p>
+            </div>
+          </li>
+
+          <li class="project" id="phototagger">
+            <h2>Phototagger</h2>
+            <h3>
+              <a href="https://github.com/mackenco/Phototagger" target="_blank">
+                Source</a>
+            </h3>
+            <div class="screenshot">
+              <img src="phototagger.png" id="phototagger_pic">
+            </div>
+            <div class="paragraph">
+              <p>An app mimicking Facebook's phototagging function. Built in the MVCish style of Backbone.js without any Backbone. Features:</p>
+              <ul>
+                <li>Users upload urls to photos.</li>
+                <li>Photos have detail, index, and edit views.</li>
+                <li>To tag, jQuery is used to determine the location of the click, a red box is drawn around the area, and a list of taggable users is rendered.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project" id="chess">
+            <h2>Chess</h2>
+            <h3>
+              <a href="https://github.com/mackenco/Chess" target="_blank">
+                Source</a>
+            </h3>
+            <div class="screenshot">
+              <img src="chess.png" id="chess_pic">
+            </div>
+            <div class="paragraph">
+              <p>A command-line, two-player chess game built in Ruby. Features:</p>
+              <ul>
+                <li>Standard chess gameplay, including alerting for check and checkmate, castling, and pawn promotion.</li>
+                <li>Prevents movement of a piece if it would lead to check.</li>
+                <li>Allows users to save or load a previous game state using YAML serialization.</li>
+                <li>Utilizes module inheritance to reduce code (e.g. bishop and queen inherit from the same movement logic).</li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+
+      </main>
+    </div>
+
+  </body>
+
+</html>
