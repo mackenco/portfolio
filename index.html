@@ -1,182 +1,39 @@
 <html>
   <head>
-    <link rel="stylesheet" href="./styles/portfolio.css">
-    <link rel="stylesheet" href="./styles/mfglabs_iconset.css">
     <meta charset="utf-8">
     <title>Colin MacKenzie</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fade.css">
+    <link rel="stylesheet" href="./styles/slide.css">
+    <link rel="stylesheet" href="./styles/mfglabs_iconset.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Lato" rel="stylesheet">
     <script type="text/javascript" src="./scripts/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="./scripts/portfolio.js"></script>
   </head>
 
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#bellyguide" class="scroll">BellyGuide</a></li>
-        <li><a href="#asteroids" class="scroll">Asteroids</a></li>
-        <li><a href="#snake" class="scroll">Snake</a></li>
-        <li><a href="#phototagger" class="scroll">Phototagger</li>
-        <li><a href="#chess" class="scroll">Chess</a></li>
-      </ul>
-    </nav>
-    <div id="wrap" class="group">
-      <header id="header">
+  <body class="blue">
 
-        <h1>Colin MacKenzie</h1>
-        <div id="pic">
-          <img src="./images/colin-mackenzie.jpg">
-        </div>
+    <div id="home">
+      <a id="about" class="white link fade transition">about</a>
+      <div class="svg-container"></div>
+      <div class="info">
+        <h1 class="white center uppercase slide-down">Colin MacKenzie</h1>
+        <h2 class="white center uppercase slide-up">Full Stack Developer</h2>
+      </div>
 
-        <p>I am a web developer located in New York with a passion for thoughtful, intuitive design and clean code. I'm looking to keep learning and be a part of challenging, stimulating projects. I'm quick on the uptake and have an eye for the bigger picture. I have competitive skills in Ruby on Rails, JavaScript, SQL, HTML, and CSS.</p>
+      <div class="svg-container">
+        <svg class="line-drawing" id="work-icon" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+          <path d="M297.818,90v85.75h85.864V422H128.317V90H297.818 M322.818,50H88.317v412h335.365V150.75L322.818,50z
+                   M348.289,303.097l-72.875,38.708v-24.293l44.504-22.674l-44.504-22.496V248l72.875,38.709V303.097z M163.712,286.709L236.587,248
+                  v24.342l-44.506,22.496l44.506,22.674v24.293l-72.875-38.708V286.709z" style="stroke-dasharray: 3270.16, 3270.16; stroke-dashoffset: 3270.16;">
+          </path>
+        </svg> 
+      </div>
 
-        <div class="icons">
-          <ul class="links">
-            <li>
-              <script type="text/javascript">
-              //<![CDATA[
-              <!--
-              var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-              "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-              ".substr(0,ol);}f(\")001,\\\"100\\\\t\\\\300\\\\630\\\\420\\\\310\\\\620\\\\" +
-              "oY_QCLr610\\\\w720\\\\]M@TDP300\\\\000\\\\}Mp}3pr{t771\\\\Ws|n}wzsnczbbffk=" +
-              "iqhjcl\\\"\\\\\\\"\\\\@230\\\\630\\\\010\\\\120\\\\X620\\\\JW\\\\\\\\530\\\\"+
-              "630\\\\420\\\\400\\\\600\\\\430\\\\230\\\\B730\\\\400\\\\410\\\\500\\\\220\\"+
-              "\\500\\\\n\\\\000\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf." +
-              "gnirtS=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcn" +
-              "uf\")"                                                                       ;
-              while(x=eval(x));
-              //-->
-              //]]>
-              </script>
-
-                <i class="icon-paperplane icon2x hoverable"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://docs.google.com/file/d/0B9kJvHTjKuCnQy1Id1B0LUwwbU0/edit?usp=sharing" target="_blank">
-                <i class="icon-information_white icon2x hoverable"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/mackenco" target="_blank">
-                <i class="icon-octopus icon2x hoverable"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.linkedin.com/in/colinwmackenzie"                              target="_blank">
-                <i class="icon-linked_in_circle icon2x hoverable"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <main id="content">
-
-        <ul class="projects">
-          <li class="project" id="bellyguide">
-            <h2><a href="http://www.belly-guide.com" target="_blank">
-                BellyGuide</a>
-            </h2>
-            <h3>
-              <a href="https://github.com/mackenco/BellyGuides" target="_blank">
-                Source</a>
-            </h3>
-            <div class="screenshot">
-              <img src="./images/bellyguide.png" id="bellyguide_pic">
-            </div>
-            <div class="paragraph">
-              <p>BellyGuide is a Rails and Backbone.js-based website that helps people keep track of restaurants they want to try by organizing them in to-do lists. Features:</p>
-              <ul>
-                <li>Create custom maps to keep track of restaurants, using the Mapbox API and Leaflet JavaScript library.</li>
-                <li>UJS used to add and delete comments on screen immediately.</li>
-                <li>Custom-made user authentication with password encryption and session token storage.</li>
-                <li>Includes Rspec tests for all  Rails models and Capybara tests for user interaction.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="project" id="asteroids">
-            <h2>
-              <a href="http://mackenco.github.io/Asteroids/" target="_blank">
-                Asteroids</a>
-            </h2>
-            <h3>
-              <a href="https://github.com/mackenco/Asteroids" target="_blank">
-                Source</a>
-            </h3>
-            <div class="screenshot">
-              <img src="./images/asteroid.png" id="asteroids_pic">
-            </div>
-            <div class="paragraph">
-              <p>The classic arcade game Asteroids built for play in the browser using JavaScript, HTML5, and Canvas.</p>
-              <ul>
-                <li>Uses inheritance to build a MovingObject class which informs movement of the ship, asteroids, and bullets.</li>
-                <li>Uses vector algebra to calculate movement of objects on the canvas.</li>
-                <li>Checks for collisions of objects and removes them from the canvas if so. Checks when objects are out of bounds and updates them accordingly.</li>
-                <li>Has a custom background using a .jpg of space.</li>
-              </ul>
-            <div class="paragraph">
-          </li>
-
-          <li class="project" id="snake">
-            <h2><a href="http://mackenco.github.io/Snake" target="_blank">
-              Snake</a>
-            </h2>
-            <h3>
-              <a href="https://github.com/mackenco/Snake/tree/master"                          target="_blank">
-                Source</a>
-            </h3>
-            <div class="screenshot">
-              <img src="./images/snake.png" id="snake_pic">
-            </div>
-            <div class="paragraph">
-              <p>A recreation of the classic game Snake. Browser-based and built using JavaScript and CSS. Snake's length increases as apples are eaten, snake dies when colliding with the wall or it's own tail.</p>
-            </div>
-          </li>
-
-          <li class="project" id="phototagger">
-            <h2>Phototagger</h2>
-            <h3>
-              <a href="https://github.com/mackenco/Phototagger" target="_blank">
-                Source</a>
-            </h3>
-            <div class="screenshot">
-              <img src="./images/phototagger.png" id="phototagger_pic">
-            </div>
-            <div class="paragraph">
-              <p>An app mimicking Facebook's phototagging function. Built in the MVCish style of Backbone.js without any Backbone. Features:</p>
-              <ul>
-                <li>Users upload urls to photos.</li>
-                <li>Photos have detail, index, and edit views.</li>
-                <li>To tag, jQuery is used to determine the location of the click, a red box is drawn around the area, and a list of taggable users is rendered.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="project" id="chess">
-            <h2>Chess</h2>
-            <h3>
-              <a href="https://github.com/mackenco/Chess" target="_blank">
-                Source</a>
-            </h3>
-            <div class="screenshot">
-              <img src="./images/chess.png" id="chess_pic">
-            </div>
-            <div class="paragraph">
-              <p>A command-line, two-player chess game built in Ruby. Features:</p>
-              <ul>
-                <li>Standard chess gameplay, including alerting for check and checkmate, castling, and pawn promotion.</li>
-                <li>Prevents movement of a piece if it would lead to check.</li>
-                <li>Allows users to save or load a previous game state using YAML serialization.</li>
-                <li>Utilizes module inheritance to reduce code (e.g. bishop and queen inherit from the same movement logic).</li>
-                </ul>
-            </div>
-          </li>
-        </ul>
-
-      </main>
+      <a id="work" class="white link fade transition">work</a>
     </div>
 
   </body>
-
 </html>
