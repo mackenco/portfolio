@@ -4,23 +4,39 @@ html, body {
 }
 
 #home {
-  position: relative;
   height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 #about {
-  top: 4%;
+  margin-top: 1.5em;
+}
+
+#about-icon {
+  margin-top: -10px;
+}
+
+#info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .link {
   border: 2px solid transparent;
   display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -35px;
   padding: 6px 10px 8px 10px;
   font-family: 'Lato';
-  font-size: 20px;
+  font-size: 1.8vw;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-align: center;
@@ -32,34 +48,30 @@ html, body {
 
 #home h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 3.8vw;
+  font-size: 5vw;
 }
 
 #home h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   font-weight: 700;
   letter-spacing: 0.3em;
   margin-top: 10px;
 }
 
 .svg-container {
-  height: 38%;
-  position: relative;
-  left: 50%;
-  margin-left: -45px;
 }
 
 .svg-container svg {
-  height: 75%;
+  height: 140px;
 }
 
-#work-icon path {
-  stroke-width: 6;
+#work-icon {
+  margin-bottom: -10px;
 }
 
 #work {
-  bottom: 4%;
+  margin-bottom: 1.5em;
 }
 
 .white {
@@ -68,11 +80,6 @@ html, body {
 
 .blue {
   background-color: #607D8B;
-}
-
-.center {
-  margin: auto;
-  text-align: center;
 }
 
 .uppercase {
