@@ -45,18 +45,16 @@ html, body {
 
 .svg-container {
   height: 38%;
+  position: relative;
+  left: 50%;
+  margin-left: -45px;
 }
 
-.line-drawing{
-  display: none;
+.svg-container svg {
+  height: 75%;
 }
 
-.line-drawing path{
-  fill: none;
-  stroke: #f8f8f8;
-}
-
-#work-ion path {
+#work-icon path {
   stroke-width: 6;
 }
 
