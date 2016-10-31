@@ -4,14 +4,15 @@
   stroke-width: 6;
 }
 
-.line-drawing path {
-  fill: #000;
-  /* fill: none; */
+.svg-container path {
+  fill: none;
   stroke: #f8f8f8;
 }
 
-.svg-container:hover path {
-  animation: dash 1s linear forwards;
+@media (min-height: 500px) { 
+  .animate path {
+    animation: dash 1s linear forwards;
+  }
 }
 
 @keyframes dash {
