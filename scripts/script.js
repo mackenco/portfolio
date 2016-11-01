@@ -1,10 +1,17 @@
 var work = document.querySelector('#work');
 var workIcon = document.querySelector("#work-icon-container svg");
 
-work.addEventListener("mouseenter", function() {
-  workIcon.classList.add('animate');
-});
+var about = document.querySelector('#about');
+var aboutIcon = document.querySelector("#about-icon-container svg");
 
-work.addEventListener("mouseleave", function() {
-  workIcon.classList.remove('animate');
+var icons = [[work, workIcon], [about, aboutIcon]];
+
+icons.forEach(function(i) {
+  i[0].addEventListener("mouseenter", function() {
+    i[1].classList.add('animate'); 
+  });
+
+  i[0].addEventListener("mouseleave", function() {
+    i[1].classList.remove('animate'); 
+  });
 });
