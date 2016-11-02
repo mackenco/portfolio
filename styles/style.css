@@ -15,7 +15,7 @@ html, body {
   -webkit-flex-direction: column;
 }
 
-#about {
+#about, #about-to-home {
   margin-top: 1.5em;
 }
 
@@ -46,6 +46,10 @@ html, body {
   border-color: #f8f8f8;
 }
 
+.link-stay {
+  border-color: #f8f8f8;
+}
+
 #home h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
@@ -59,17 +63,11 @@ html, body {
   margin-top: 10px;
 }
 
-.svg-container {
-}
-
 .svg-container svg {
   height: 140px;
 }
 
-#work-icon {
-}
-
-#work {
+#work, #work-to-home {
   margin-bottom: 1.5em;
 }
 
@@ -86,7 +84,9 @@ html, body {
 }
 
 .transition {
-  -webkit-transition: all 400ms cubic-bezier(0.25,.46,.45,.94);
-  -moz-transition: all 400ms cubic-bezier(0.25,.46,.45,.94);
   transition: all 400ms cubic-bezier(0.25,.46,.45,.94);
+}
+
+.hide {
+  display: none;
 }

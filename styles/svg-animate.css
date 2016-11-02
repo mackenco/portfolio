@@ -2,12 +2,10 @@
   stroke-dasharray: 50;
   stroke-dashoffset: 50; 
 }
-
 #aboutp2 {
   stroke-dasharray: 70;
   stroke-dashoffset: 70; 
 }
-
 #aboutp3 {
   stroke-dasharray: 200;
   stroke-dashoffset: 200; 
@@ -29,7 +27,7 @@
 }
 
 @media (min-height: 500px) { 
-  .animate path {
+  .animate.on-hover path {
     animation: dash 1s linear forwards;
   }
 }

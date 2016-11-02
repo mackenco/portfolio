@@ -1,3 +1,7 @@
+/* 
+ * TODO: CSS lint, build process
+ */
+
 var work = document.querySelector('#work');
 var workIcon = document.querySelector("#work-icon-container svg");
 
@@ -19,8 +23,13 @@ links.forEach(function(link) {
   });
 
   link[0].addEventListener("click", function() {
+    var otherID = link[0].id === 'about' ? '#work' : '#about';
+
     h1.classList.add('disappear-up'); 
     h2.classList.add('disappear-down'); 
+    link[0].classList.add('link-stay');
+    link[1].classList.remove('on-hover');
+    document.querySelector(otherID + '-to-home').classList.remove('hide');
+    document.querySelector(otherID).classList.add('hide');
   });
-
 });
