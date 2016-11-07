@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="./styles/slide.css">
     <link rel="stylesheet" href="./styles/svg-animate.css">
     <link rel="stylesheet" href="./styles/mfglabs_iconset.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Lato:300,400,700" rel="stylesheet">
     <script type="text/javascript" src="./scripts/jquery-1.9.1.js"></script>
   </head>
 
   <body class="blue">
 
-    <div id="home">
+    <main>
       <a id="about" class="white link fade transition">about</a>
       <a id="about-to-home" class="white link fade transition hide">home</a>
 
@@ -30,10 +30,19 @@
         </svg>
       </div>
 
-      <div id="info">
-        <h1 class="white uppercase slide-down">Colin MacKenzie</h1>
-        <h2 class="white uppercase slide-up">Full Stack Developer</h2>
-      </div>
+      <section id="info">
+        <h1 class="hide white uppercase slide-down">Colin MacKenzie</h1>
+        <h2 class="hide white uppercase slide-up">Full Stack Developer</h2>
+      </section>
+
+      <section id="bio">
+        <img src="image.jpg">
+        <article>
+          <p class="white">I'm a software developer living in Brooklyn, New York. I like building tools, making complicated things simple(r), and writing code not just for myself, but the people using it six months, two years, and who-knows-how-long in the future.</p>
+          <p class="white">I currently work as a <b>Software Engineer</b> at <b><a href="http://www.mlbam.com" target="_blank">MLB Advanced Media.</a></b></p>
+          <p class="white">If you'd like to get in touch, <b><a href="">email me.</a></b></p>
+        </article>
+      </section>
 
       <div id="work-icon-container" class="svg-container">
         <svg id="work-icon" class="on-hover" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
@@ -46,7 +55,7 @@
 
       <a id="work" class="white link fade transition">work</a>
       <a id="work-to-home" class="white link fade transition hide">home</a>
-    </div>
+    </main>
 
     <script type="text/javascript" src="./scripts/script.js"></script>
   </body>
