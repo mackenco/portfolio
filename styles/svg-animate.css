@@ -1,20 +1,20 @@
-#aboutp1 {
+.aboutp1 {
   stroke-dasharray: 50;
   stroke-dashoffset: 50; 
 }
-#aboutp2 {
+.aboutp2 {
   stroke-dasharray: 70;
   stroke-dashoffset: 70; 
 }
-#aboutp3 {
+.aboutp3 {
   stroke-dasharray: 200;
   stroke-dashoffset: 200; 
 }
-#about-icon path {
+.about-icon path {
   stroke-width: 0.5;
 }
 
-#work-icon path {
+.work-icon path {
   stroke-dasharray: 3270.16;
   stroke-dashoffset: 3270.16;
   stroke-width: 6;

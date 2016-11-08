@@ -13,29 +13,28 @@
     <link rel="stylesheet" href="./styles/svg-animate.css">
     <link rel="stylesheet" href="./styles/mfglabs_iconset.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Lato:300,400,700" rel="stylesheet">
-    <script type="text/javascript" src="./scripts/jquery-1.9.1.js"></script>
   </head>
 
   <body class="blue">
 
     <main>
-      <a id="about" class="white link fade transition">about</a>
-      <a id="about-to-home" class="white link fade transition hide">home</a>
+      <a id="about" class="about white link fade transition">about</a>
+      <a class="about-to-home white link fade transition hide">home</a>
 
-      <div id="about-icon-container" class="svg-container">
-        <svg id="about-icon" class="on-hover" viewBox="-4 -6 39 39" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
-            <path id="aboutp1" d="M14 9.5c0-0.825 0.675-1.5 1.5-1.5h1c0.825 0 1.5 0.675 1.5 1.5v1c0 0.825-0.675 1.5-1.5 1.5h-1c-0.825 0-1.5-0.675-1.5-1.5v-1z"></path>
-            <path id="aboutp2" d="M20 24h-8v-2h2v-6h-2v-2h6v8h2z"></path>
-            <path id="aboutp3" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+      <div class="about-icon-container svg-container">
+        <svg class="about-icon on-hover" viewBox="-4 -6 39 39" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+            <path class="aboutp1" d="M14 9.5c0-0.825 0.675-1.5 1.5-1.5h1c0.825 0 1.5 0.675 1.5 1.5v1c0 0.825-0.675 1.5-1.5 1.5h-1c-0.825 0-1.5-0.675-1.5-1.5v-1z"></path>
+            <path class="aboutp2" d="M20 24h-8v-2h2v-6h-2v-2h6v8h2z"></path>
+            <path class="aboutp3" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
         </svg>
       </div>
 
-      <section id="info">
-        <h1 class="hide white uppercase slide-down">Colin MacKenzie</h1>
-        <h2 class="hide white uppercase slide-up">Full Stack Developer</h2>
+      <section class="info">
+        <h1 class="white uppercase slide-down">Colin MacKenzie</h1>
+        <h2 class="white uppercase slide-up">Full Stack Developer</h2>
       </section>
 
-      <section id="bio">
+      <section class="bio transition hide">
         <img src="image.jpg">
         <article>
           <p class="white">I'm a software developer living in Brooklyn, New York. I like building tools, making complicated things simple(r), and writing code not just for myself, but the people using it six months, two years, and who-knows-how-long in the future.</p>
@@ -44,8 +43,8 @@
         </article>
       </section>
 
-      <div id="work-icon-container" class="svg-container">
-        <svg id="work-icon" class="on-hover" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+      <div class="work-icon-container svg-container">
+        <svg class="work-icon on-hover" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
           <path d="M297.818,90v85.75h85.864V422H128.317V90H297.818 M322.818,50H88.317v412h335.365V150.75L322.818,50z
                    M348.289,303.097l-72.875,38.708v-24.293l44.504-22.674l-44.504-22.496V248l72.875,38.709V303.097z M163.712,286.709L236.587,248
                   v24.342l-44.506,22.496l44.506,22.674v24.293l-72.875-38.708V286.709z">
@@ -53,8 +52,8 @@
         </svg> 
       </div>
 
-      <a id="work" class="white link fade transition">work</a>
-      <a id="work-to-home" class="white link fade transition hide">home</a>
+      <a id="work" class="work white link fade transition">work</a>
+      <a class="work-to-home white link fade transition hide">home</a>
     </main>
 
     <script type="text/javascript" src="./scripts/script.js"></script>

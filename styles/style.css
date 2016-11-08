@@ -15,11 +15,11 @@ main {
   -webkit-flex-direction: column;
 }
 
-#about, #about-to-home {
+.about, .about-to-home {
   margin-top: 1.5em;
 }
 
-#about-icon {
+.about-icon {
   margin-top: -10px;
 }
 
@@ -42,7 +42,7 @@ main {
   border-color: #f8f8f8;
 }
 
-#info {
+.info {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -51,21 +51,22 @@ main {
 }
 
 
-#info h1 {
+.info h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
 }
 
-#info h2 {
+.info h2 {
   font-family: Lato, sans-serif;
   font-size: 2.5vw;
-  /* font-weight: 700; */
+  font-weight: 700;
   letter-spacing: 0.3em;
   margin-top: 10px;
 }
 
-#bio {
+.bio {
   flex-grow: 1;
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +102,7 @@ article b {
   height: 140px;
 }
 
-#work, #work-to-home {
+.work, .work-to-home {
   margin-bottom: 1.5em;
 }
 
@@ -121,6 +122,6 @@ article b {
   transition: all 400ms cubic-bezier(0.25,.46,.45,.94);
 }
 
-.hide {
+.hide, .inactive {
   display: none;
 }
