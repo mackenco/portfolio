@@ -4,16 +4,12 @@ html, body {
 }
 
 main {
-  color: #ECEFF1;
-  height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  color: #ECEFF1;
+  display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .about-link, .about-to-home {
@@ -27,11 +23,11 @@ main {
 .link {
   border: 2px solid transparent;
   display: block;
-  padding: 6px 10px 8px 10px;
   font-family: 'Lato';
   font-size: 1.8vw;
   font-weight: 700;
   letter-spacing: 0.1em;
+  padding: 6px 10px 8px 10px;
   text-align: center;
 }
 
@@ -44,36 +40,35 @@ main {
 }
 
 .about-content {
-  flex-grow: 1;
-  opacity: 0;
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-grow: 1;
   justify-content: center;
+  opacity: 0;
   width: 75%; 
 }
 
 img {
-  height: 300px;
-  width: 300px;
   border: 3px solid #263238;
+  height: 300px;
   margin-right: 1.5em;
-
+  width: 300px;
 }
 
 .info {
-  flex-grow: 1;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
 }
 
-.info h1 {
+.name {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
 }
 
-.info h2 {
+.title {
   font-family: "Lato", sans-serif;
   font-size: 2.5vw;
   font-weight: 700;
@@ -85,13 +80,13 @@ img {
   font-family: "Lato", sans-serif;
   font-size: 2vw;
   font-weight: 300;
-  margin: 20px 0;
   line-height: 1.3em;
+  margin: 20px 0;
 }
 
 .about-content a, .about-content a:visited {
-  text-decoration: none;
   color: #37474F;
+  text-decoration: none;
 }
 
 .about-content b {
@@ -105,23 +100,23 @@ img {
 }
 
 .work-content a, .work-content a:visited {
-  text-decoration: none;
-  font-weight: 400;
   color: #ECEFF1;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .column-wrapper {
   float: left;
-  width: 85%;
   line-height: 1.25em;
   margin-bottom: 25px;
   margin-left: 5%;
+  width: 85%;
 }
 
 .column-wrapper div:nth-child(1) {
   float: left;
-  width: 30%;
   font-weight: 700;
+  width: 30%;
 }
 
 .column-wrapper div:nth-child(2) {

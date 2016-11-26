@@ -1,6 +1,6 @@
 .fade {
-  animation-name: fadein;
   animation-duration: 4s;
+  animation-name: fadein;
 }
 
 .quick-fade {

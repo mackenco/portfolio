@@ -1,6 +1,8 @@
 /* 
- * TODO: CSS lint, build process, webkit stuff
+ * TODO: CSS lint, webkit stuff
  */
+
+// build me with uglifyjs -c -m -o 'built-script.js' -- scripts/script.js
 
 var h1Class = document.querySelector('h1').classList;
 var h2Class = document.querySelector('h2').classList;
