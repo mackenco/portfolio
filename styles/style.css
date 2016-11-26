@@ -1,0 +1,152 @@
+/* csslint styles/ */
+/* cat styles/reset.css styles/style.css styles/animations.css > temp.css && postcss --use autoprefixer temp.css --replace && cssmin temp.css > build.css && rm temp.css */
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  color: #ECEFF1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.about-link, .about-to-home {
+  margin-top: 1.5em;
+}
+
+.about-icon {
+  margin-top: -10px;
+}
+
+.link {
+  border: 2px solid transparent;
+  display: block;
+  font-family: 'Lato';
+  font-size: 1.8vw;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 6px 10px 8px 10px;
+  text-align: center;
+}
+
+.link:hover {
+  border-color: #f8f8f8;
+}
+
+.link-stay {
+  border-color: #f8f8f8;
+}
+
+.about-content {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  opacity: 0;
+  width: 75%; 
+}
+
+img {
+  border: 3px solid #263238;
+  height: 300px;
+  margin-right: 1.5em;
+  width: 300px;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+}
+
+.title {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  margin-top: 10px;
+}
+
+.about-content p {
+  font-family: "Lato", sans-serif;
+  font-size: 2vw;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin: 20px 0;
+}
+
+.about-content a, .about-content a:visited {
+  color: #37474F;
+  text-decoration: none;
+}
+
+.about-content b {
+  font-weight: 700;
+}
+
+.work-content {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 300;
+}
+
+.work-content a, .work-content a:visited {
+  color: #ECEFF1;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.column-wrapper {
+  float: left;
+  line-height: 1.25em;
+  margin-bottom: 25px;
+  margin-left: 5%;
+  width: 85%;
+}
+
+.column-wrapper div:nth-child(1) {
+  float: left;
+  font-weight: 700;
+  width: 30%;
+}
+
+.column-wrapper div:nth-child(2) {
+  float: right;
+  width: 69%;
+}
+
+.svg-container svg {
+  height: 140px;
+}
+
+.work-link, .work-to-home {
+  margin-bottom: 1.5em;
+}
+
+.blue {
+  background-color: #607D8B;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.transition {
+  transition: all 400ms cubic-bezier(0.25,.46,.45,.94);
+}
+
+.hide, .inactive {
+  display: none;
+}
