@@ -74,14 +74,14 @@ img {
 }
 
 .info h2 {
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2.5vw;
   font-weight: 700;
   letter-spacing: 0.3em;
   margin-top: 10px;
 }
 
-article p {
+.about-content p {
   font-family: "Lato", sans-serif;
   font-size: 2vw;
   font-weight: 300;
@@ -89,13 +89,44 @@ article p {
   line-height: 1.3em;
 }
 
-article a, article a:visited {
+.about-content a, .about-content a:visited {
   text-decoration: none;
   color: #37474F;
 }
 
-article b {
+.about-content b {
   font-weight: 700;
+}
+
+.work-content {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 300;
+}
+
+.work-content a, .work-content a:visited {
+  text-decoration: none;
+  font-weight: 400;
+  color: #ECEFF1;
+}
+
+.column-wrapper {
+  float: left;
+  width: 85%;
+  line-height: 1.25em;
+  margin-bottom: 25px;
+  margin-left: 5%;
+}
+
+.column-wrapper div:nth-child(1) {
+  float: left;
+  width: 30%;
+  font-weight: 700;
+}
+
+.column-wrapper div:nth-child(2) {
+  float: right;
+  width: 69%;
 }
 
 .svg-container svg {
