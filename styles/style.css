@@ -1,5 +1,5 @@
 /* csslint styles/ */
-/* cat styles/reset.css styles/style.css styles/animations.css > built-css.css */
+/* cat styles/reset.css styles/style.css styles/animations.css > temp.css && postcss --use autoprefixer temp.css --replace && cssmin temp.css > build.css && rm temp.css */
 
 html, body {
   height: 100%;
