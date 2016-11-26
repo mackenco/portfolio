@@ -1,3 +1,6 @@
+/* csslint styles/ */
+/* cat styles/reset.css styles/style.css styles/animations.css > built-css.css */
+
 html, body {
   height: 100%;
   width: 100%;
