@@ -1,0 +1,77 @@
+@media screen and (min-width: 45em) {
+  .link {
+    font-size: 1.8vw;
+  }
+
+  .about-content {
+    flex-direction: row; 
+  }
+
+  .about-content p {
+    font-size: 2vw;
+  }
+
+  .about-link, .about-to-home {
+    margin-top: 1.5em;
+  }
+
+  img {
+    border: 3px solid #263238;
+    height: 25vw; 
+    margin-right: 1.5em;
+    width: 25vw;
+  }
+
+  .name {
+    font-size: 5vw; 
+  }
+
+  .title {
+    font-size: 2.5vw; 
+  }
+
+  .work-content {
+    font-size: 1.1vw;
+    height: 50%;
+  }
+
+  .column-wrapper {
+    float: left;
+    margin: 0 0 25px 5%;
+  }
+
+  .column-wrapper div:nth-child(1) {
+    float: left;
+    font-weight: 700;
+    width: 30%;
+  }
+
+  .column-wrapper div:nth-child(2) {
+    float: right;
+    width: 69%;
+  }
+
+  .svg-container svg {
+    height: 140px;
+  }
+
+  .work-link, .work-to-home {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .work-content { margin-bottom: 40%; }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .work-content { margin-bottom: 30%; }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .work-content { margin-bottom: 20%; }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .work-content { margin-bottom: 10%; }
+}
