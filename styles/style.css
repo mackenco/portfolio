@@ -1,7 +1,8 @@
-/* csslint styles/ */
-/* cat styles/reset.css styles/style.css styles/animations.css > temp.css && postcss --use autoprefixer temp.css --replace && cssmin temp.css > build.css && rm temp.css */
+/* cat styles/reset.css styles/style.css styles/large.css styles/animations.css > temp.css && postcss --use autoprefixer temp.css --replace && cssmin temp.css > build.css && rm temp.css */
 
 html, body {
+  background-color: #607D8B;
+  font-family: "Lato", sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -16,7 +17,7 @@ main {
 }
 
 .about-link, .about-to-home {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .about-icon {
@@ -26,36 +27,15 @@ main {
 .link {
   border: 2px solid transparent;
   display: block;
-  font-family: 'Lato';
-  font-size: 1.8vw;
+  font-size: 5vw;
   font-weight: 700;
   letter-spacing: 0.1em;
   padding: 6px 10px 8px 10px;
   text-align: center;
 }
 
-.link:hover {
+.link:hover, .link-stay {
   border-color: #f8f8f8;
-}
-
-.link-stay {
-  border-color: #f8f8f8;
-}
-
-.about-content {
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  opacity: 0;
-  width: 75%; 
-}
-
-img {
-  border: 3px solid #263238;
-  height: 300px;
-  margin-right: 1.5em;
-  width: 300px;
 }
 
 .info {
@@ -64,27 +44,43 @@ img {
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 .name {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 5vw;
+  font-size: 10vw;
 }
 
 .title {
-  font-family: "Lato", sans-serif;
-  font-size: 2.5vw;
+  font-size: 5vw;
   font-weight: 700;
   letter-spacing: 0.3em;
   margin-top: 10px;
 }
 
+.about-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  opacity: 0;
+  width: 75%; 
+}
+
+img {
+  border: 2px solid #263238;
+  height: 23vw;
+  width: 23vw;
+}
+
 .about-content p {
-  font-family: "Lato", sans-serif;
-  font-size: 2vw;
+  font-size: 3.5vw;
   font-weight: 300;
   line-height: 1.3em;
   margin: 20px 0;
+  text-align: center;
 }
 
 .about-content a, .about-content a:visited {
@@ -97,8 +93,7 @@ img {
 }
 
 .work-content {
-  font-family: "Lato", sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   font-weight: 300;
 }
 
@@ -109,38 +104,23 @@ img {
 }
 
 .column-wrapper {
-  float: left;
+  font-size: 1.7em;
   line-height: 1.25em;
-  margin-bottom: 25px;
-  margin-left: 5%;
+  margin: 0 10% 25px 10%;
   width: 85%;
 }
 
 .column-wrapper div:nth-child(1) {
-  float: left;
+  font-size: 1.1em;
   font-weight: 700;
-  width: 30%;
-}
-
-.column-wrapper div:nth-child(2) {
-  float: right;
-  width: 69%;
-}
-
-.svg-container svg {
-  height: 140px;
 }
 
 .work-link, .work-to-home {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
-.blue {
-  background-color: #607D8B;
-}
-
-.uppercase {
-  text-transform: uppercase;
+.svg-container svg {
+  height: 0;
 }
 
 .transition {
