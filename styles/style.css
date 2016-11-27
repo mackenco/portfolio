@@ -1,5 +1,3 @@
-/* cat styles/reset.css styles/style.css styles/large.css styles/animations.css > temp.css && postcss --use autoprefixer temp.css --replace && cssmin temp.css > build.css && rm temp.css */
-
 html, body {
   background-color: #607D8B;
   font-family: "Lato", sans-serif;

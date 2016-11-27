@@ -1,5 +1,3 @@
-// uglifyjs -c -m -o 'build.js' -- scripts/script.js
-
 var h1Class = document.querySelector('h1').classList;
 var h2Class = document.querySelector('h2').classList;
 var sections = { 
